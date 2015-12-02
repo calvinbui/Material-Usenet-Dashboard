@@ -1,0 +1,99 @@
+/* entire calendar positioning */
+#fcalendar {
+    margin: 16px 16px 0 16px;
+}
+
+/* top toolbar (arrows + today button) positioning */
+.fc-toolbar {
+    margin-bottom: 16px;
+}
+
+/* background colour for day highlighting */
+.fc-state-highlight {
+    background: #dbdbdb !important;
+}
+
+/* font */
+.fc-day-header,
+.fc-time,
+.fc-title {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/* tv show name styling */
+.fc-title {
+    padding: 0 1px;
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* show time styling */
+.fc-time {
+    padding: 0 1px;
+    font-weight: 500 !important;
+}
+
+/* show calendar no matter what */
+.fc-view {
+    overflow: visible;
+}
+
+/* border around tv show to hide the fugly colour behind it*/
+.fc-event {
+    border: 1px solid transparent !important;
+}
+
+/* space out the tv shows a little */
+.fc-day-grid-event {
+    margin-bottom: 2px !important;
+}
+
+/* day of the week styling */
+.fc th {
+    background-color: #e6e6e6;
+    font-weight: 500;
+}
+
+/* center legend */
+.legend-labels {
+    display: table;
+    margin: 0 auto;
+}
+
+/* label style */
+.legend-label {
+    list-style: none;
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 8px;
+    text-align: center;
+    height: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+/* remove empty space at the bottom of the calendar */
+.fc-content-skeleton {
+    padding-bottom: 0 !important;
+}
+
+/* some shadow on the calendar */
+.fc-view > table {
+    box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+}
+
+/* fade in */
+.fc-head, .fc-body {
+    transition: opacity 2s ease-in;
+}
+
+/* poster within tooltip */
+.poster {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float: left!important;
+    margin: 7px 10px 10px 0;
+}

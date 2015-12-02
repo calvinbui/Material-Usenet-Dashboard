@@ -1,0 +1,25 @@
+/** Animations
+
+Fade in from left to right to mirror material design's meaningful transitions.
+
+**/
+
+#weather-section {
+    animation-delay: 0.05s;
+}
+
+#system-section {
+    animation-delay: 0.15s;
+}
+
+#movies-section {
+    animation-delay: 0.25s;
+}
+
+#prtg-section {
+    animation-delay: 0.40s;
+}
+
+#sonarr-section {
+    animation-delay: 0.50s;
+}

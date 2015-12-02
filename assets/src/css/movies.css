@@ -1,0 +1,71 @@
+
+/* Extra small devices (phones, less than 768px) */
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 480px) {
+    .poster {
+        height: 182px;
+        width: 123px;
+    }
+}
+
+@media (min-width: 768px) {
+    .poster {
+        max-height: 285px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .poster {
+        height: 173px;
+        width: 117px;
+    }
+}
+
+/*
+*
+* Slick Slider
+*
+*/
+
+/* margin around slider. 7px to compensate for arrows */
+.slick-slide {
+    margin: 0 7px 7px 0 !important;
+}
+
+/* margin around entire thing */
+.slick-slider {
+    margin: 16px 24px 16px 24px !important;
+}
+
+/* right arrow positioning */
+.slick-next {
+    right: -16px;
+}
+
+/* left arrow positioning */
+.slick-prev {
+    left: -16px;
+}
+
+/* move buttons to the top */
+.slick-next,
+.slick-prev {
+    position: absolute !important;
+    top: 40%;
+    z-index: 9999;
+
+}
+
+/* downloaded/coming soon title styles */
+.movie-title {
+    margin-top: 16px !important;
+    margin-left: 24px;
+    font-weight: 300;
+}
+

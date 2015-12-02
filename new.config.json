@@ -1,0 +1,75 @@
+{
+  "memory_format" : "GB",
+  "prtg": "https://prtg/public/mapshow.htm?id=2288!", //put your own url here
+  "weather": {
+    "forecast_api": "1234567890987654321", //https://developer.forecast.io/
+    "location": "New York", // put any name you want
+    "longitude": "111", //use Google Maps or something to obtain this
+    "latitude": "122",
+    "units": "ca" //ca for celsius and us for fahrenheit
+  },
+  "sonarr" : {
+    "api" : "123123123", //api key from Sonarr
+    "api_url" : "http://10.0.9.8/api" // sonarr api url
+  },
+  "couchpotato" : {
+    "api" : "123123123", //couchpotato api key
+    "api_url" : "https://10.0.9.7/couchpotato/api/" //couchpotato api url
+  },
+  "services": [ //list your services below like so. you can have as many as you want
+    {
+      "name" : "NZBGet",
+      "ip"   : "10.0.9.15",
+      "port" : "443",
+      "url"  : "nzbget/"
+    },
+    {
+      "name" : "Sonarr",
+      "ip"   : "10.0.9.8",
+      "port" : "443",
+      "url"  : "nzbdrone"
+    },
+    {
+      "name" : "CouchPotato",
+      "ip"   : "10.0.9.7",
+      "port" : "443",
+      "url"  : "couchpotato"
+    },
+    {
+      "name" : "Headphones",
+      "ip"   : "10.0.9.11",
+      "port" : "443",
+      "url"  : "headphones"
+    },
+    {
+      "name" : "NZBmegasearcH",
+      "ip"   : "10.0.9.12",
+      "port" : "443",
+      "url"  : "nzbmegasearch/"
+    },
+    {
+      "name" : "LazyLibrarian",
+      "ip"   : "10.0.9.13",
+      "port" : "80",
+      "url"  : "lazylibrarian"
+    },
+    {
+      "name" : "Transmission",
+      "ip"   : "10.0.9.9",
+      "port" : "80",
+      "url"  : "transmission"
+    }
+  ],
+  "storage":  [ //list your storage devices below. you can have as many as you want
+    {
+      "directory" : "c:",
+      "name" : "C Drive",
+      "unit" : "GB"
+    },
+    {
+      "directory" : "d:",
+      "name" : "D Drive",
+      "unit" : "TB"
+    }
+  ]
+}

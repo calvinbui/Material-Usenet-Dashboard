@@ -1,0 +1,9 @@
+//
+   The drawer is always open in large screens. The header is always shown,
+    even in small screens.
+.mdl-layout__drawer.mdl-color--blue-grey-900
+    .mdl-layout-title
+        img.avatar(src="/img/avatar.png")
+    nav.mdl-navigation(ng-controller='ServiceCtrl')
+        a.mdl-color-text--blue-grey-50.mdl-navigation__link#nav-link(ng-repeat='service in services' href="{{service.url}}")
+            .service-name(ng-class="{'mdl-color-text--blue-grey-600': service.status == 'closed'}") {{service.name}}

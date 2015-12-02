@@ -1,0 +1,46 @@
+/**
+*
+*Card Stuff
+*
+**/
+
+/* stretch cards to meet their grid */
+.mdl-card {
+    width: 100% !important;
+}
+
+/* placed at the end of sections to leave gaps on mobile */
+.section-separator {
+    height: 16px;
+}
+/* gap between cards within the same grid cell */
+.card-separator {
+    height: 32px;
+}
+
+/* font for sidenav */
+.mdl-navigation,
+.mdl-card__supporting-text {
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/* border around cards. used in movie section to separate downloaded and coming soon */
+.mdl-card--border {
+    border-top: 1px solid #000;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+/* get some padding on the left for mobile */
+.mdl-grid {
+    padding-left: 16px !important;
+    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+}
+
+@media (max-width: 479px) {
+    .mdl-grid {
+        padding: 16px; !important;
+    }
+}

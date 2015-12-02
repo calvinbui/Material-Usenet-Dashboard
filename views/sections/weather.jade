@@ -1,0 +1,20 @@
+.mdl-card.mdl-shadow--4dp(ng-controller='WeatherCtrl')
+   .mdl-card__title.mdl-color--primary
+      h5.mdl-color-text--accent-contrast#weather-title
+         .mdl-card__title-text {{weather.location}}
+         .mdl-card__subtitle-text.mdl-color-text--primary-contrast {{weather.currentSummary}}, {{weather.currentTemp}}°
+   .mdl-card__supporting-text.mdl-color-text--grey-600
+      strong Next 24 Hours
+      div {{weather.dailySummary}}
+      br
+      strong This Week
+      div {{weather.weeklySummary}}
+      br
+      strong Sunrise: &nbsp
+      |{{weather.sunrise}} &
+      strong &nbspSunset: &nbsp
+      |{{weather.sunset}}
+   .mdl-card__menu
+      .section__circle-container#weather-icon
+         .section__circle-container__circle.mdl-shadow--4dp
+            img#weather-image(ng-src="/img/weather-icons/{{weather.icon}}.png")
