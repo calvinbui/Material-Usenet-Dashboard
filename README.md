@@ -13,20 +13,20 @@ MHP is able to provide:
 
 ## Installation
 
-1. Install NodeJS & npm on your computer and download/clone MHP.
+Install NodeJS & npm on your computer and download/clone MHP.
 
-2. Inside the MHP folder, npm install to grab all the dependencies required by MHP.
+Inside the MHP folder, npm install to grab all the dependencies required by MHP.
 ```
 npm install
 ```
 
-3. Make changes to the 'new.config.json' file to match it to your own settings then renamed it to 'config.json'
+Make changes to the 'new.config.json' file to match it to your own settings then renamed it to 'config.json'
 
-4. Start the program by running
+Start the program by running
 ```
 node app.js
 ```
-5. Access the site at http://localhost:3000
+Access the site at http://localhost:3000
 
 ## Stuff used to make this
 * [AngularJS](https://angularjs.org/)
