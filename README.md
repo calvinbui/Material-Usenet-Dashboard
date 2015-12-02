@@ -1,8 +1,8 @@
-# Material Home Page
+# Material Usenet Dashboard
 
-Material Home Page (MHP) is a Node JS application that makes use of Google's Material Design standards.
+Material Usenet Dashboard (MUP) is a Node JS application that makes use of Google's Material Design standards.
 
-MHP is able to provide:
+MUD is able to provide:
 
  * Network services and their status e.g. CouchPotato, Sonarr, NZBGet, Transmission
  * TV Shows from Sonarr, and their status
