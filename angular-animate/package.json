@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      "angular-animate",
+      "C:\\Users\\Calvin\\WebStormProjects\\network-status-page-js-port"
+    ]
+  ],
+  "_from": "angular-animate@*",
+  "_id": "angular-animate@1.4.8",
+  "_inCache": true,
+  "_location": "/angular-animate",
+  "_nodeVersion": "0.10.26",
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angularcore"
+  },
+  "_npmVersion": "2.0.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "angular-animate",
+    "raw": "angular-animate",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/angular-animate/-/angular-animate-1.4.8.tgz",
+  "_shasum": "2c388a066d16677aecbebbddaf27a217f7002a57",
+  "_shrinkwrap": null,
+  "_spec": "angular-animate",
+  "_where": "C:\\Users\\Calvin\\WebStormProjects\\network-status-page-js-port",
+  "author": {
+    "email": "angular-core+npm@google.com",
+    "name": "Angular Core Team"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular.js/issues"
+  },
+  "dependencies": {},
+  "description": "AngularJS module for animations",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2c388a066d16677aecbebbddaf27a217f7002a57",
+    "tarball": "http://registry.npmjs.org/angular-animate/-/angular-animate-1.4.8.tgz"
+  },
+  "gitHead": "cc1d9740059f5e8fd43abf0e2e80695d43b3b6b1",
+  "homepage": "http://angularjs.org",
+  "installable": true,
+  "keywords": [
+    "angular",
+    "animation",
+    "browser",
+    "client-side",
+    "framework"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "akalinovski",
+      "email": "a.kalinovski@gmail.com"
+    },
+    {
+      "name": "ws-malysheva",
+      "email": "ws.malysheva@gmail.com"
+    },
+    {
+      "name": "pitbeast",
+      "email": "PitBeast777@gmail.com"
+    },
+    {
+      "name": "angularcore",
+      "email": "angular-core+npm@google.com"
+    },
+    {
+      "name": "petebd",
+      "email": "pete@bacondarwin.com"
+    }
+  ],
+  "name": "angular-animate",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angular/angular.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.4.8"
+}

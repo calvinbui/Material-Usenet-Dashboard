@@ -1,0 +1,81 @@
+{
+  "_args": [
+    [
+      "animate.css",
+      "C:\\Users\\Calvin\\WebStormProjects\\network-status-page-js-port"
+    ]
+  ],
+  "_from": "animate.css@*",
+  "_id": "animate.css@3.4.0",
+  "_inCache": true,
+  "_location": "/animate.css",
+  "_nodeVersion": "0.12.4",
+  "_npmUser": {
+    "email": "dan.eden@me.com",
+    "name": "dte"
+  },
+  "_npmVersion": "2.10.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "animate.css",
+    "raw": "animate.css",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/animate.css/-/animate.css-3.4.0.tgz",
+  "_shasum": "27302ef999aed9f6355456216812f03a8fa46d54",
+  "_shrinkwrap": null,
+  "_spec": "animate.css",
+  "_where": "C:\\Users\\Calvin\\WebStormProjects\\network-status-page-js-port",
+  "bugs": {
+    "url": "https://github.com/daneden/animate.css/issues"
+  },
+  "dependencies": {},
+  "description": "*Just-add-water CSS animation*",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~0.4.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "27302ef999aed9f6355456216812f03a8fa46d54",
+    "tarball": "http://registry.npmjs.org/animate.css/-/animate.css-3.4.0.tgz"
+  },
+  "gitHead": "f1ce5d863ead842422d77f46038c5e09794e1eab",
+  "homepage": "https://github.com/daneden/animate.css#readme",
+  "installable": true,
+  "jspm": {
+    "directories": {
+      "lib": "./"
+    },
+    "format": "global",
+    "main": "animate.css!"
+  },
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "dte",
+      "email": "dan.eden@me.com"
+    }
+  ],
+  "name": "animate.css",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daneden/animate.css.git"
+  },
+  "scripts": {},
+  "spm": {
+    "main": "./animate.css"
+  },
+  "version": "3.4.0"
+}
