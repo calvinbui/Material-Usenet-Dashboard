@@ -19,10 +19,6 @@
     display: block;
     width: 122px;
     margin: 100px auto;
-    -webkit-transition:all linear 5s;
-    -moz-transition:all linear 5s;
-    -o-transition:all linear 5s;
-    transition:all linear 5s;
 }
 
 .loading-dots.ng-hide {
