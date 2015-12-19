@@ -18,7 +18,7 @@
 }
 /* gap between cards within the same grid cell */
 .card-separator {
-    height: 32px;
+    height: 16px;
 }
 
 /* font for sidenav */
