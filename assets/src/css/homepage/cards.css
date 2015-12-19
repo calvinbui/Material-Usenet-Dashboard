@@ -3,7 +3,9 @@
 *Card Stuff
 *
 **/
-
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
 /* stretch cards to meet their grid */
 .mdl-layout__content {
     display:block !important;

@@ -13,7 +13,7 @@ html
                 #preloaders
                     .loading-bar(aria-busy="true", aria-label="Loading, please wait.", role="progressbar")
                 include loading
-            .mdl-layout__content(ng-show="loaded", ng-cloak)
+            .mdl-layout__content.ng-cloak(ng-show="loaded", ng-cloak)
                 .mdl-grid
                     .mdl-cell.mdl-cell--3-col-desktop#grid-left-section
                         .mdl-cell--12-col#weather-section
