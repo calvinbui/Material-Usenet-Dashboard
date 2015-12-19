@@ -14,6 +14,7 @@ app.use('/angular-loading-bar', express.static(__dirname + '/node_modules/angula
 app.use('/angular-slick', express.static(__dirname + '/node_modules/angular-slick-carousel/dist/'));
 app.use('/animate/', express.static(__dirname + '/node_modules/animate.css/'));
 app.use('/assets', express.static(__dirname + '/assets/'));
+app.use('/materialize/', express.static(__dirname + '/assets/dist/materialize/'));
 app.use('/css', express.static(__dirname + '/assets/dist/css/'));
 app.use('/fullcalendar', express.static(__dirname + '/node_modules/fullcalendar/dist/'));
 app.use('/img', express.static(__dirname + '/assets/dist/img/'));
