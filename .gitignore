@@ -31,3 +31,6 @@ npm-debug.log
 
 #IDEA
 .idea/
+
+#myconfigfile
+config.json
