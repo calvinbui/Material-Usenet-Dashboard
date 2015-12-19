@@ -9,11 +9,10 @@ html
         include css
     body(ng-app='homepageApp')
         div(ng-controller="LoadingCtrl")
-            .loading-dots(ng-hide="loaded")
-                .loading
-                .loading
-                .loading
-                .loading
+            .loading-stuff(ng-hide="loaded")
+                #preloaders
+                    .loading-bar(aria-busy="true", aria-label="Loading, please wait.", role="progressbar")
+                include loading
             .mdl-layout__content(ng-show="loaded", ng-cloak)
                 .mdl-grid
                     .mdl-cell.mdl-cell--3-col-desktop#grid-left-section
