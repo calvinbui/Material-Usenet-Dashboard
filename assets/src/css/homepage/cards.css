@@ -5,6 +5,9 @@
 **/
 
 /* stretch cards to meet their grid */
+.mdl-layout__content {
+    display:block !important;
+}
 .mdl-card {
     width: 100% !important;
 }

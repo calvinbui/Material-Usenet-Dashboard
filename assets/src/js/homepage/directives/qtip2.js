@@ -1,7 +1,7 @@
 // not made by me.
 // directive for qtip2
 // look in tv controller for its usage
-angular.module('myApp').directive('qtip', qtip);
+angular.module('homepageApp').directive('qtip', qtip);
 
 function qtip() {
    return {

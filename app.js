@@ -30,7 +30,10 @@ app.use('/ui-calendar', express.static(__dirname + '/node_modules/angular-ui-cal
 // render the index.jade page
 app.get('/', function (req, res) {
     res.render('index');
-    ignoreLoadingBar: true;
+});
+
+app.get('/homepage', function (req, res) {
+    res.render('homepage/homepage');
 });
 
 // routes

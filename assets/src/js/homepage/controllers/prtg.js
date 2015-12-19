@@ -1,5 +1,5 @@
 // prtg controller
-angular.module('myApp').controller('PRTGCtrl', PRTGCtrl);
+angular.module('homepageApp').controller('PRTGCtrl', PRTGCtrl);
 
 PRTGCtrl.$inject = ['$scope', '$http', '$sce'];
 

@@ -1,5 +1,5 @@
 // storage devices controller
-angular.module('myApp').controller('StorageCtrl', StorageCtrl);
+angular.module('homepageApp').controller('StorageCtrl', StorageCtrl);
 
 StorageCtrl.$inject = ['$scope', '$http'];
 

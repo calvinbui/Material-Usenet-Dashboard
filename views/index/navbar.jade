@@ -1,0 +1,19 @@
+// Always shows a header, even in smaller screens.
+.mdl-layout.mdl-js-layout.mdl-layout--fixed-header(ng-controller='ServiceCtrl')
+    header.mdl-layout__header
+        .mdl-layout__header-row
+            span.mdl-layout-title
+                img.avatar(src="/img/avatar.png")
+            .mdl-layout-spacer
+            // Navigation. We hide it in small screens.
+            nav.mdl-navigation.mdl-layout--large-screen-only
+                a.mdl-color-text--blue-grey-50.mdl-navigation__link(ng-repeat='service in services' href="{{service.url}}" target="iframe1")
+                    .service-name(ng-class="{'mdl-color-text--blue-grey-600': service.status == 'closed'}") {{service.name}}
+    .mdl-layout__drawer.mdl-color--blue-grey-900
+        span.mdl-layout-title
+            img.avatar(src="/img/avatar.png")
+        nav.mdl-navigation
+            a.mdl-color-text--blue-grey-50.mdl-navigation__link(ng-repeat='service in services' href="{{service.url}}" target="iframe1")
+                .service-name(ng-class="{'mdl-color-text--blue-grey-600': service.status == 'closed'}") {{service.name}}
+    main.mdl-layout__content
+        .page-content

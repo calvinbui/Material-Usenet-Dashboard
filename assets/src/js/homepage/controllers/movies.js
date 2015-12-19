@@ -1,5 +1,5 @@
 // movies controller for couchpotato
-angular.module('myApp').controller('MoviesCtrl', MoviesCtrl);
+angular.module('homepageApp').controller('MoviesCtrl', MoviesCtrl);
 
 MoviesCtrl.$inject = ['$scope', '$http'];
 

@@ -1,5 +1,5 @@
 // sonarr controller
-angular.module('myApp').controller('TVCtrl', TVCtrl);
+angular.module('homepageApp').controller('TVCtrl', TVCtrl);
 
 TVCtrl.$inject = ['$scope', '$http', 'uiCalendarConfig', '$timeout', '$compile'];
 

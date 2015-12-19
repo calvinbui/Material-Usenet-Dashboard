@@ -1,11 +1,14 @@
-div(ng-controller="LoadingCtrl")
-    .loading-stuff(ng-hide="loaded")
-        #preloaders
-            .loading-bar(aria-busy="true", aria-label="Loading, please wait.", role="progressbar")
-        include loading
-    .mdl-layout.mdl-js-layout.mdl-layout--fixed-drawer(ng-show="loaded", ng-cloak)
-        include navbar
-        main.mdl-layout__content
+// contents of the app. to fill the iframe
+doctype html
+html
+    head
+        title="Hey You!"
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(http-equiv="x-ua-compatible", content="ie=edge")
+        include css
+    body(ng-app='homepageApp')
+        .mdl-layout__content
             .mdl-grid
                 .mdl-cell.mdl-cell--3-col-desktop#grid-left-section
                     .mdl-cell--12-col#weather-section
@@ -22,5 +25,6 @@ div(ng-controller="LoadingCtrl")
                     .mdl-cell--12-col#sonarr-section
                         include sections/tv
                     .card-separator
-                    .mdl-cell--12-col#prtg-section
+                    //.mdl-cell--12-col#prtg-section
                         include sections/prtg
+        include js

@@ -1,6 +1,6 @@
 // loading bar configuration
 
-angular.module('myApp').config(LoadingBarProviderConfiguration);
+angular.module('homepageApp').config(LoadingBarProviderConfiguration);
 
 LoadingBarProviderConfiguration.$inject = ['cfpLoadingBarProvider'];
 

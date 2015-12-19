@@ -1,5 +1,5 @@
 // system controller
-angular.module('myApp').controller('SystemCtrl', SystemCtrl);
+angular.module('homepageApp').controller('SystemCtrl', SystemCtrl);
 
 SystemCtrl.$inject = ['$scope', '$http', '$interval'];
 

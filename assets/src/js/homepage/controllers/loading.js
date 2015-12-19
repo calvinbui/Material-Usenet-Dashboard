@@ -1,5 +1,5 @@
 // controls the loading dots and bar
-angular.module('myApp').controller('LoadingCtrl', LoadingCtrl);
+angular.module('homepageApp').controller('LoadingCtrl', LoadingCtrl);
 
 LoadingCtrl.$inject = ['$scope', '$rootScope', 'uiCalendarConfig', '$timeout'];
 

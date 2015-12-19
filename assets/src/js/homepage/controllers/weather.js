@@ -1,5 +1,5 @@
 //weather controller
-angular.module('myApp').controller('WeatherCtrl', WeatherCtrl);
+angular.module('homepageApp').controller('WeatherCtrl', WeatherCtrl);
 WeatherCtrl.$inject = ['$scope', '$http'];
 
 function WeatherCtrl($scope, $http) {

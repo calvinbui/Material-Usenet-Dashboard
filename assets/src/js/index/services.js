@@ -1,5 +1,5 @@
 // sidenav services
-angular.module('myApp').controller('ServiceCtrl', ServiceCtrl);
+angular.module('indexApp').controller('ServiceCtrl', ServiceCtrl);
 
 ServiceCtrl.$inject = ['$scope', '$http'];
 

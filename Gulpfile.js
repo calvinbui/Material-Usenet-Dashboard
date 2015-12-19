@@ -47,22 +47,40 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css/'));
 });
 
-gulp.task('minifycss', function() {
-    return gulp.src('./assets/src/css/*.css')
+gulp.task('minifyhomepagecss', function() {
+    return gulp.src('./assets/src/css/homepage/*.css')
         //.pipe(rename({ suffix: '.min' }))
         .pipe(minifyCss({
             compatibility: 'ie8',
             keepSpecialComments: 0
         }))
-        .pipe(concat('style.min.css'))
+        .pipe(concat('homepage.min.css'))
+        .pipe(gulp.dest('./assets/dist/css/'));
+});
+gulp.task('minifyindexcss', function() {
+    return gulp.src('./assets/src/css/index/*.css')
+        //.pipe(rename({ suffix: '.min' }))
+        .pipe(minifyCss({
+            compatibility: 'ie8',
+            keepSpecialComments: 0
+        }))
+        .pipe(concat('index.min.css'))
         .pipe(gulp.dest('./assets/dist/css/'));
 });
 
-gulp.task('minifyjs', function() {
-    return gulp.src('./assets/src/js/**/*.js')
+gulp.task('minifyhomepagejs', function() {
+    return gulp.src('./assets/src/js/homepage/**/*.js')
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(concat('scripts.min.js'))
+        .pipe(concat('homepage.min.js'))
+        .pipe(gulp.dest('./assets/dist/js/'));
+});
+
+gulp.task('minifyindexjs', function() {
+    return gulp.src('./assets/src/js/index/**/*.js')
+        .pipe(uglify())
+        //.pipe(rename({ suffix: '.min' }))
+        .pipe(concat('index.min.js'))
         .pipe(gulp.dest('./assets/dist/js/'));
 });
 
@@ -76,6 +94,8 @@ gulp.task('imagemin', function() {
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
-    gulp.watch('./assets/src/css/*.css', ['minifycss']);
-    gulp.watch('./assets/src/js/**/*.js', ['minifyjs']);
+    gulp.watch('./assets/src/css/homepage/*.css', ['minifyhomepagecss']);
+    gulp.watch('./assets/src/css/index/*.css', ['minifyindexcss']);
+    gulp.watch('./assets/src/js/index/**/*.js', ['minifyindexjs']);
+    gulp.watch('./assets/src/js/homepage/**/*.js', ['minifyhomepagejs']);
 });
