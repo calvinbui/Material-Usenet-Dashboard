@@ -9,18 +9,18 @@ MUD is able to provide:
  * Movies from CouchPotato and their status
  * The weather in a chosen location
  * System information such as CPU, memory and disk usage
- * An iFrame which can be filled with anything, but optimised for PRTG Network Maps
+ * An iFrame which can be filled with anything, but optimised for PRTG Network Maps (645x350 perfect resolution 1080p screens)
 
 ## Installation
 
-Install NodeJS & npm on your computer and download/clone MHP.
+Install NodeJS (tested on 4.2.3 LTS) & npm on your computer and download/clone MUP.
 
-Inside the MHP folder, npm install to grab all the dependencies required by MHP.
+Inside the MUP folder, npm install to grab all the dependencies required by MUP.
 ```
 npm install
 ```
 
-Make changes to the 'new.config.json' file to match it to your own settings then renamed it to 'config.json'
+Make changes to the 'new.config.json' file to match it to your own settings then renamed it to 'config.json'.
 
 Start the program by running
 ```
