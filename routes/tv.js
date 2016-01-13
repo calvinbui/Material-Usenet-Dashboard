@@ -14,7 +14,7 @@ module.exports = function(app, config) {
         });
 
         sonarr.get("calendar", {
-            "start": moment().day(-8).format('YYYY-MM-DD'), // two weeks ago starting Monday
+            "start": moment().day(-8).format('YYYY-MM-DD'), // two weeks ago starting Monday.
             "end": moment().day(21).format('YYYY-MM-DD') }) // two sundays in the future 7 = this sunday so 21 = 3 sundays
             .then(function (result) {
                 var shows = result;
