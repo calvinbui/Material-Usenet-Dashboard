@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     eslint = require('gulp-eslint'),
     sass = require('gulp-sass'),
-    minifyCss = require('gulp-minify-css'),
+    minifyCss = require('gulp-cssnano'),
     uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     watch = require('gulp-watch'),
@@ -51,7 +51,6 @@ gulp.task('minifyhomepagecss', function() {
     return gulp.src('./assets/src/css/homepage/*.css')
         //.pipe(rename({ suffix: '.min' }))
         .pipe(minifyCss({
-            compatibility: 'ie8',
             keepSpecialComments: 0
         }))
         .pipe(concat('homepage.min.css'))
@@ -61,7 +60,6 @@ gulp.task('minifyindexcss', function() {
     return gulp.src('./assets/src/css/index/*.css')
         //.pipe(rename({ suffix: '.min' }))
         .pipe(minifyCss({
-            compatibility: 'ie8',
             keepSpecialComments: 0
         }))
         .pipe(concat('index.min.css'))
