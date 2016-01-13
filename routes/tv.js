@@ -13,7 +13,7 @@ module.exports = function(app, config) {
             password: config.sonarr.password
         });
 
-        sonarr.get("calendar", { "start": moment().subtract(3,'weeks').format('YYYY-MM-DD'), "end": moment().add(3,'weeks').format('YYYY-MM-DD') }).then(function (result) {
+        sonarr.get("calendar", { "start": moment().subtract(2,'weeks').format('YYYY-MM-DD'), "end": moment().add(2,'weeks').format('YYYY-MM-DD') }).then(function (result) {
             var shows = result;
             var formattedJSON = []; // initialise
             for (var show in shows) { //add the colour to the tv show. not the best way to do this but works i guess
