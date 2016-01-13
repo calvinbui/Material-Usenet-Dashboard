@@ -1,6 +1,5 @@
 module.exports = function(app, config) {
     var SonarrAPI = require('sonarr-api');
-    var request = require("request");
     var moment = require('moment');
 
     app.get('/sonarr_api', function(req, res) {
@@ -14,23 +13,8 @@ module.exports = function(app, config) {
             password: config.sonarr.password
         });
 
-        sonarr.get("system/status").then(function (result) {
-            res.send(result);
-        }).catch(function (err) {
-            throw new Error("There was a error processing the request: " + err);
-        });
-
-        /*var options = {
-            url:
-                config.sonarr.api_url + //from config file
-                '/calendar?start=' +  //start date
-                moment().subtract(365,'days').format('YYYY-MM-DD') + //last year (365 days before now)
-                '&end=' + //end date
-                moment().add(365,'days').format('YYYY-MM-DD'), //next year (365 days from now)
-            headers: { 'x-api-key': config.sonarr.api } //api key sent as header
-        };
-        function callback(error, response, body) {
-            var shows = JSON.parse(body);
+        sonarr.get("calendar", { "start": moment().subtract(3,'weeks').format('YYYY-MM-DD'), "end": moment().add(3,'weeks').format('YYYY-MM-DD') }).then(function (result) {
+            var shows = result;
             var formattedJSON = []; // initialise
             for (var show in shows) { //add the colour to the tv show. not the best way to do this but works i guess
                 var status = 'mdl-color--indigo-400'; //default unaired
@@ -38,7 +22,7 @@ module.exports = function(app, config) {
                     status = 'mdl-color--red'; //missing
                 } else if (shows[show].hasFile) {
                     status = 'mdl-color--green'; //downloaded
-                //during the airdate and before the finish time. add the runtime to the start time to get the end time
+                    //during the airdate and before the finish time. add the runtime to the start time to get the end time
                 } else if (moment().isAfter(moment(shows[show].airDateUtc)) && moment().isBefore(moment(shows[show].airDateUtc).add('minutes', shows[show].runtime))) {
                     status = 'mdl-color--orange-600'; //on air
                 }
@@ -55,7 +39,8 @@ module.exports = function(app, config) {
                 });
             }
             res.send(formattedJSON);
-        }
-        request(options, callback);*/
+        }, function (err) {
+            throw new Error("There was a error processing the request: " + err);
+        });
     });
 };
