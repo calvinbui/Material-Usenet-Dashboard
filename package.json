@@ -25,6 +25,7 @@
     "portscanner": "^1.0.0",
     "request": "^2.65.0",
     "slick-carousel": "^1.5.8",
+    "sonarr-api": "^0.1.2",
     "windows-cpu": "^0.1.4"
   },
   "devDependencies": {

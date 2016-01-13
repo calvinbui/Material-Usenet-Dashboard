@@ -1,9 +1,26 @@
 module.exports = function(app, config) {
+    var SonarrAPI = require('sonarr-api');
     var request = require("request");
     var moment = require('moment');
 
     app.get('/sonarr_api', function(req, res) {
-        var options = {
+        var sonarr = new SonarrAPI({
+            hostname: config.sonarr.host,
+            apiKey: config.sonarr.api,
+            port: config.sonarr.port,
+            urlBase: config.sonarr.url_base,
+            ssl: config.sonarr.ssl,
+            username: config.sonarr.username,
+            password: config.sonarr.password
+        });
+
+        sonarr.get("system/status").then(function (result) {
+            res.send(result);
+        }).catch(function (err) {
+            throw new Error("There was a error processing the request: " + err);
+        });
+
+        /*var options = {
             url:
                 config.sonarr.api_url + //from config file
                 '/calendar?start=' +  //start date
@@ -39,6 +56,6 @@ module.exports = function(app, config) {
             }
             res.send(formattedJSON);
         }
-        request(options, callback);
+        request(options, callback);*/
     });
 };
