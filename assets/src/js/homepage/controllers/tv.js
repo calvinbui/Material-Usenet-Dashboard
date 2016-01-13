@@ -42,6 +42,29 @@ function TVCtrl($scope, $http, uiCalendarConfig, $timeout, $compile){
     // ui calendar configuration
     $scope.uiConfig = {
         calendar:{
+            viewRender: function(view,element) {
+                var now = new Date();
+                var end = new Date();
+                var start = new Date();
+                start.setDate(now.getDate() - 14); //Adjust as needed
+                end.setDate(now.getDate() + 14); //Adjust as needed
+
+                if ( end < view.end) {
+                    $(".fc-next-button").attr("disabled", true);
+                    return false;
+                }
+                else {
+                    $(".fc-next-button").attr("disabled", false);
+                }
+
+                if ( start < view.start) {
+                    $(".fc-prev-button").attr("disabled", false);
+                    return false;
+                }
+                else {
+                    $(".fc-prev-button").attr("disabled", true);
+                }
+            },
             editable: false,
             handleWindowResize: true,
             weekends: true,

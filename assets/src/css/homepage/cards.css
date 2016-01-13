@@ -46,6 +46,6 @@
 
 @media (max-width: 479px) {
     .mdl-grid {
-        padding: 16px; !important;
+        padding: 16px !important;
     }
 }
