@@ -9,8 +9,13 @@
     "units": "ca" //ca for celsius and us for fahrenheit
   },
   "sonarr" : {
-    "api" : "123123123", //api key from Sonarr
-    "api_url" : "http://10.0.9.8/api" // sonarr api url
+    "api" : "123123123",
+    "host" : "10.0.9.8",
+    "port" : 9000,
+    "url_base" : "/sonarr",
+    "ssl" : false,
+    "username" : null,
+    "password" : null
   },
   "couchpotato" : {
     "api" : "123123123", //couchpotato api key
