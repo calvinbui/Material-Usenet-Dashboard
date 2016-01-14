@@ -10,8 +10,6 @@ html
     body(ng-app='homepageApp')
         div(ng-controller="LoadingCtrl")
             .loading-stuff(ng-hide="loaded")
-                #preloaders
-                    .loading-bar(aria-busy="true", aria-label="Loading, please wait.", role="progressbar")
                 include loading
             .mdl-layout__content.ng-cloak(ng-show="loaded", ng-cloak)
                 .mdl-grid
