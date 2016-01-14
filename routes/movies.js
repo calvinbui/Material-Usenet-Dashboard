@@ -1,6 +1,4 @@
 module.exports = function(app, config) {
-    var request = require("request");
-    var process = require("process");
     var CouchPotatoAPI = require('couchpotato-api');
 
     var couchpotato = new CouchPotatoAPI({
