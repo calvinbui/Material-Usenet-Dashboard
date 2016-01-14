@@ -12,6 +12,7 @@
     "animate.css": "^3.4.0",
     "async": "^1.5.0",
     "autostrip-json-comments": "0.0.4",
+    "couchpotato-api": "^0.1.0",
     "diskspace": "^1.0.2",
     "express": "^4.13.3",
     "file-size": "^1.0.0",
