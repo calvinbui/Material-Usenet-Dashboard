@@ -1,11 +1,16 @@
 var express = require('express');
 var app = express();
+var compression = require('compression');
+
 
 require('autostrip-json-comments'); // remove comments from JSON as they are not standard
 var config = require('./config.json'); // get the json file
 
 // set the view engine to Jade
 app.set('view engine', 'jade');
+
+// compress responses
+app.use(compression());
 
 // middleware
 app.use('/angular', express.static(__dirname + '/node_modules/angular/'));
