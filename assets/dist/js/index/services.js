@@ -1,0 +1,1 @@
+function ServiceCtrl(e,c){c.get("/services").success(function(c){e.services=c})}angular.module("indexApp").controller("ServiceCtrl",ServiceCtrl),ServiceCtrl.$inject=["$scope","$http"];

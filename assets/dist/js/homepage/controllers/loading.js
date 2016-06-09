@@ -1,0 +1,1 @@
+function LoadingCtrl(o,a){a.$on("cfpLoadingBar:completed",function(){o.loaded=!0,o.$broadcast("loaded")})}angular.module("homepageApp").controller("LoadingCtrl",LoadingCtrl),LoadingCtrl.$inject=["$scope","$rootScope","uiCalendarConfig","$timeout"];

@@ -1,0 +1,1 @@
+function PRTGCtrl(t,r,e){r.get("/prtg_map").success(function(r){t.prtg=e.trustAsResourceUrl(r)})}angular.module("homepageApp").controller("PRTGCtrl",PRTGCtrl),PRTGCtrl.$inject=["$scope","$http","$sce"];

@@ -1,12 +1,11 @@
 var gulp = require('gulp'),
-    eslint = require('gulp-eslint'),
-    sass = require('gulp-sass'),
-    minifyCss = require('gulp-cssnano'),
-    uglify = require('gulp-uglify'),
-    imagemin = require('gulp-imagemin'),
-    watch = require('gulp-watch'),
-    concat = require('gulp-concat'),
-    csslint = require('gulp-csslint');
+    eslint = require('gulp-eslint'), // lint JS
+    sass = require('gulp-sass'), // compile SASS
+    uglify = require('gulp-uglify'), // minify JS
+    cleanCSS = require('gulp-clean-css'), // minify CSS
+    imagemin = require('gulp-imagemin'), // minify images
+    watch = require('gulp-watch'), // watcher
+    csslint = require('gulp-csslint'); // lint JS
 
 // define the default task and add the watch task to it
 gulp.task('default', ['watch']);
@@ -50,36 +49,28 @@ gulp.task('sass', function () {
 gulp.task('minifyhomepagecss', function() {
     return gulp.src('./assets/src/css/homepage/*.css')
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(minifyCss({
-            keepSpecialComments: 0
-        }))
-        .pipe(concat('homepage.min.css'))
-        .pipe(gulp.dest('./assets/dist/css/'));
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./assets/dist/css/homepage/'));
 });
 gulp.task('minifyindexcss', function() {
     return gulp.src('./assets/src/css/index/*.css')
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(minifyCss({
-            keepSpecialComments: 0
-        }))
-        .pipe(concat('index.min.css'))
-        .pipe(gulp.dest('./assets/dist/css/'));
+        .pipe(cleanCSS())
+        .pipe(gulp.dest('./assets/dist/css/index/'));
 });
 
 gulp.task('minifyhomepagejs', function() {
     return gulp.src('./assets/src/js/homepage/**/*.js')
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(concat('homepage.min.js'))
-        .pipe(gulp.dest('./assets/dist/js/'));
+        .pipe(gulp.dest('./assets/dist/js/homepage/'));
 });
 
 gulp.task('minifyindexjs', function() {
     return gulp.src('./assets/src/js/index/**/*.js')
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(concat('index.min.js'))
-        .pipe(gulp.dest('./assets/dist/js/'));
+        .pipe(gulp.dest('./assets/dist/js/index/'));
 });
 
 gulp.task('imagemin', function() {

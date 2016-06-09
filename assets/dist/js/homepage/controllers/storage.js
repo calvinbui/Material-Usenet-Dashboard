@@ -1,0 +1,1 @@
+function StorageCtrl(t,e){e.get("/storage").success(function(e){t.disks=e})}angular.module("homepageApp").controller("StorageCtrl",StorageCtrl),StorageCtrl.$inject=["$scope","$http"];

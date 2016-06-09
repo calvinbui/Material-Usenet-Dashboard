@@ -1,0 +1,1 @@
+function SystemCtrl(t,e,s){function n(){e.get("/system",{ignoreLoadingBar:!0}).success(function(e){t.system=e})}e.get("/system").success(function(e){t.system=e}),s(n,5e3)}angular.module("homepageApp").controller("SystemCtrl",SystemCtrl),SystemCtrl.$inject=["$scope","$http","$interval"];
