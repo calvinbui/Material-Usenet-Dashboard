@@ -1,6 +1,6 @@
 # Material Usenet Dashboard
 
-Material Usenet Dashboard (MUP) is a Node JS application that makes use of Google's Material Design standards.
+Material Usenet Dashboard (MUD) is a Node JS application that makes use of Google's Material Design standards.
 
 MUD is able to provide:
 
@@ -40,7 +40,7 @@ Access the site at http://localhost:3000
 * [Forecast IO](http://forecast.io/)
 * [Full Calendar](http://fullcalendar.io/)
 * [gulp](http://gulpjs.com/)
-* [Jade](http://jade-lang.com/)
+* [Pug](http://jade-lang.com/)
 * [jQuery](https://jquery.com/)
 * [Material Design Lite](http://www.getmdl.io/)
 * [Moment](http://momentjs.com/)
