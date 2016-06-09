@@ -6,8 +6,8 @@ var compression = require('compression');
 require('autostrip-json-comments'); // remove comments from JSON as they are not standard
 var config = require('./config.json'); // get the json file
 
-// set the view engine to Jade
-app.set('view engine', 'jade');
+// set the view engine to Pug
+app.set('view engine', 'pug');
 
 // compress responses
 app.use(compression());
