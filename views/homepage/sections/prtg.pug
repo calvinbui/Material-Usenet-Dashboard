@@ -1,0 +1,6 @@
+.mdl-card.mdl-shadow--4dp
+    .mdl-card__title.mdl-color--primary
+        h2.mdl-card__title-text.mdl-color-text--accent-contrast Network
+    .mdl-card__media.mdl-color--white
+        .embed-container#prtg(ng-controller='PRTGCtrl')
+            iframe(ng-src="{{prtg}}", scrolling="no", seamless="seamless")

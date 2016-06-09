@@ -1,0 +1,11 @@
+.mdl-card.mdl-shadow--4dp(ng-controller="TVCtrl")
+    .mdl-card__title.mdl-color--primary
+        h2.mdl-card__title-text.mdl-color-text--accent-contrast TV Shows
+    .mdl-card__media.mdl-color--white#fcalendar
+        .calendar(ui-calendar="uiConfig.calendar", ng-model="tvShows", calendar="sonarr")
+    .mdl-card__supporting-text
+        .legend-labels
+            li.legend-label.mdl-button--raised.mdl-button--colored.mdl-color--indigo-400 Unaired
+            li.legend-label.mdl-button--raised.mdl-button--colored.mdl-color--red Missing
+            li.legend-label.mdl-button--raised.mdl-button--colored.mdl-color--green Downloaded
+            li.legend-label.mdl-button--raised.mdl-button--colored.mdl-color--orange-600 On Air
