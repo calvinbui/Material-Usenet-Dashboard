@@ -38,10 +38,6 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.get('/homepage', function (req, res) {
-    res.render('homepage/homepage');
-});
-
 // routes
 require('./routes')(app, config);
 
