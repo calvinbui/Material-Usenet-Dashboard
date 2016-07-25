@@ -11,23 +11,22 @@ html
         div(ng-controller="LoadingCtrl")
             .loading-stuff(ng-hide="loaded")
                 include loading
-            .mdl-layout__content.ng-cloak(ng-show="loaded", ng-cloak)
-                .mdl-grid
-                    .mdl-cell.mdl-cell--3-col-desktop#grid-left-section
-                        //.mdl-cell--12-col#weather-section
-                            include sections/weather
-                        //.card-separator
-                        .mdl-cell--12-col#system-section
-                            include sections/system
-                        .section-separator
-                    .mdl-cell.mdl-cell--4-col-desktop#grid-middle-section
-                        .mdl-cell--12-col#movies-section
-                            include sections/movies
-                        .section-separator
-                    .mdl-cell.mdl-cell--5-col-desktop#grid-right-section
-                        .mdl-cell--12-col#sonarr-section
-                            include sections/tv
-                        .card-separator
-                        //.mdl-cell--12-col#prtg-section
-                            include sections/prtg
+            .mdl-grid.ng-cloak(ng-show="loaded", ng-cloak)
+                .mdl-cell.mdl-cell--3-col#grid-left-section
+                    //.mdl-cell--12-col#weather-section
+                        include sections/weather
+                    //.card-separator
+                    #system-section
+                        include sections/system
+                    //.section-separator
+                .mdl-cell.mdl-cell--4-col#grid-middle-section
+                    #movies-section
+                        include sections/movies
+                    //.section-separator
+                .mdl-cell.mdl-cell--5-col#grid-right-section
+                    #sonarr-section
+                        include sections/tv
+                    //.card-separator
+                    //.mdl-cell--12-col#prtg-section
+                        include sections/prtg
         include js

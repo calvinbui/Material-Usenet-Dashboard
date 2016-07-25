@@ -10,5 +10,5 @@ html
     body(ng-app='indexApp')
         include navbar
         .fill
-            iframe#iframe1(name="iframe1", src="homepage", frameborder="0")
+            iframe#iframe1(name="iframe1", src="homepage", frameborder="0", sandbox='allow-forms allow-same-origin allow-pointer-lock allow-scripts allow-popups allow-modals', allowfullscreen='true', webkitallowfullscreen='true', mozallowfullscreen='true', scrolling='auto')
     include js
