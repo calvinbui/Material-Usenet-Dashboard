@@ -46,31 +46,17 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css/'));
 });
 
-gulp.task('minifyhomepagecss', function() {
-    return gulp.src('./assets/src/css/homepage/*.css')
+gulp.task('minifycss', function() {
+    return gulp.src('./assets/src/css/*.css')
         //.pipe(rename({ suffix: '.min' }))
         .pipe(cleanCSS())
-        .pipe(gulp.dest('./assets/dist/css/homepage/'));
+        .pipe(gulp.dest('./assets/dist/css/'));
 });
-gulp.task('minifyindexcss', function() {
-    return gulp.src('./assets/src/css/index/*.css')
-        //.pipe(rename({ suffix: '.min' }))
-        .pipe(cleanCSS())
-        .pipe(gulp.dest('./assets/dist/css/index/'));
-});
-
-gulp.task('minifyhomepagejs', function() {
-    return gulp.src('./assets/src/js/homepage/**/*.js')
+gulp.task('minifyjs', function() {
+    return gulp.src('./assets/src/js/**/*.js')
         .pipe(uglify())
         //.pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('./assets/dist/js/homepage/'));
-});
-
-gulp.task('minifyindexjs', function() {
-    return gulp.src('./assets/src/js/index/**/*.js')
-        .pipe(uglify())
-        //.pipe(rename({ suffix: '.min' }))
-        .pipe(gulp.dest('./assets/dist/js/index/'));
+        .pipe(gulp.dest('./assets/dist/js/'));
 });
 
 gulp.task('imagemin', function() {
@@ -83,8 +69,6 @@ gulp.task('imagemin', function() {
 
 // configure which files to watch and what tasks to use on file changes
 gulp.task('watch', function() {
-    gulp.watch('./assets/src/css/homepage/*.css', ['minifyhomepagecss']);
-    gulp.watch('./assets/src/css/index/*.css', ['minifyindexcss']);
-    gulp.watch('./assets/src/js/index/**/*.js', ['minifyindexjs']);
-    gulp.watch('./assets/src/js/homepage/**/*.js', ['minifyhomepagejs']);
+    gulp.watch('./assets/src/css/*.css', ['minifycss']);
+    gulp.watch('./assets/src/js/**/*.js', ['minifyjs']);
 });

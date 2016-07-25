@@ -12,13 +12,13 @@ html
             .loading-stuff(ng-hide="loaded")
                 include loading
             .mdl-grid.ng-cloak(ng-show="loaded", ng-cloak)
-                .mdl-cell.mdl-cell--3-col#grid-left-section
+                .mdl-cell.mdl-cell--3-col-desktop.mdl-cell--8-col-tablet.mdl-cell--4-col-phone#grid-left-section
                     #storage-section
                         include sections/storage
-                .mdl-cell.mdl-cell--4-col#grid-middle-section
+                .mdl-cell.mdl-cell--4-col-desktop.mdl-cell--8-col-tablet.mdl-cell--4-col-phone#grid-middle-section
                     #movies-section
                         include sections/movies
-                .mdl-cell.mdl-cell--5-col#grid-right-section
+                .mdl-cell.mdl-cell--5-col-desktop.mdl-cell--8-col-tablet.mdl-cell--4-col-phone#grid-right-section
                     #sonarr-section
                         include sections/tv
         include js

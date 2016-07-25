@@ -1,1 +1,0 @@
-function WeatherCtrl(e,t){t.get("/weather").success(function(t){e.weather=t})}angular.module("homepageApp").controller("WeatherCtrl",WeatherCtrl),WeatherCtrl.$inject=["$scope","$http"];
