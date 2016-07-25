@@ -3,12 +3,7 @@
 Fade in from left to right to mirror material design's meaningful transitions.
 
 **/
-
-#weather-section {
-    animation-delay: 0.05s;
-}
-
-#system-section {
+#storage-section {
     animation-delay: 0.15s;
 }
 
@@ -16,10 +11,6 @@ Fade in from left to right to mirror material design's meaningful transitions.
     animation-delay: 0.25s;
 }
 
-#prtg-section {
-    animation-delay: 0.40s;
-}
-
 #sonarr-section {
-    animation-delay: 0.50s;
+    animation-delay: 0.35s;
 }

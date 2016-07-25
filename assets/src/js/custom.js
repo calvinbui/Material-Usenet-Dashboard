@@ -11,5 +11,5 @@ $(document).ready(function() {
 
     //animations
     $('.mdl-layout__drawer').addClass('animated fadeIn');
-    $('#weather-section, #system-section, #movies-section, #prtg-section, #sonarr-section').addClass('animated fadeIn');
+    $('#storage-section, #movies-section, #sonarr-section').addClass('animated fadeIn');
 });
