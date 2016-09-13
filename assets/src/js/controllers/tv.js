@@ -25,7 +25,7 @@ function TVCtrl($scope, $http, uiCalendarConfig, $timeout, $compile){
         element.attr({
             'qtip-class': 'qtip-tipsy qtip-shadow qtip-rounded',
             'qtip':
-                '<img class="poster mdl-shadow--4dp" src="' + show.poster + '"/>' + // image
+                //'<img class="poster mdl-shadow--4dp" src="' + show.poster + '"/>' + // image
                 '<div class="show-overview">' +
                     show.title + '</br>' + //show name
                     ' S' + show.season + ', E' + show.episode + '</br>' + //season + episode

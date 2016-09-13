@@ -27,10 +27,11 @@ module.exports = function(app, config) {
                         start       : result[show].airDateUtc,
                         className   : [returnShowStatus(result[show]), 'mdl-shadow--2dp'], // add the mdl shadow on along with the status of the episode
                         overview    : result[show].overview,
-                        poster      : result[show].series.images[2].url // 2 because 0 is the first
+                        //poster      : result[show].series.images[2].url // 2 because 0 is the first
                     });
                 }
                 res.send(formattedJSON);
+
         }, function (err) {
             throw new Error("There was a error processing the request: " + err);
         });
