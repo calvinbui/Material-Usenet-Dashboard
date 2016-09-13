@@ -6,9 +6,9 @@
         h5.movie-title Downloaded
         slick(ng-if="moviesdownloaded.movies", settings="slickConfig")
             div(ng-repeat='movie in moviesdownloaded.movies')
-                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster[0]}}')
+                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster_original[0]}}')
         .mdl-card--border
         h5.movie-title Coming Soon
         slick(ng-if="moviescomingsoon.movies", settings="slickConfig")
             div(ng-repeat='movie in moviescomingsoon.movies')
-                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster[0]}}')
+                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster_original[0]}}')
