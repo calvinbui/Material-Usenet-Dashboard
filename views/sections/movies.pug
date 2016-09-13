@@ -4,11 +4,11 @@
     .mdl-card__menu
     .mdl-card__media.mdl-color--white(ng-controller='MoviesCtrl')
         h5.movie-title Downloaded
-        slick(ng-if="moviesdownloaded.movies", settings="slickConfig")
-            div(ng-repeat='movie in moviesdownloaded.movies')
-                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster[0]}}')
+        slick(ng-if="moviesdownloaded", settings="slickConfig")
+            div(ng-repeat='movie in moviesdownloaded')
+                img.poster.mdl-shadow--4dp(ng-src='{{movie.poster}}')
         .mdl-card--border
         h5.movie-title Coming Soon
-        slick(ng-if="moviescomingsoon.movies", settings="slickConfig")
-            div(ng-repeat='movie in moviescomingsoon.movies')
-                img.poster.mdl-shadow--4dp(ng-src='{{movie.info.images.poster[0]}}')
+        slick(ng-if="moviescomingsoon", settings="slickConfig")
+            div(ng-repeat='movie in moviescomingsoon')
+                img.poster.mdl-shadow--4dp(ng-src='{{movie.poster}}')

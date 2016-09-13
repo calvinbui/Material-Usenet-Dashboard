@@ -13,7 +13,15 @@ module.exports = function(app, config) {
 
     function cpApiCall(path, res) {
         couchpotato.get(path).then(function (result) {
-            res.send(result)
+        	var formattedJSON = [];
+        	for (var movie in result.movies) { //grab every item from the movie array from couchpotato results
+        		var poster_url = result.movies[movie].info.images.poster[0] //set poster url
+        		poster_url = poster_url.replace(/^http:\/\//i, 'https://'); //change http to https
+        		formattedJSON.push({
+        			poster: poster_url
+        		});
+        	}
+            res.send(formattedJSON)
         }).catch(function (err) {
             throw new Error("There was a error processing the request: " + err);
         });
