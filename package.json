@@ -19,7 +19,7 @@
     "file-size": "^1.0.0",
     "forecastio": "^0.2.0",
     "fullcalendar": "^2.4.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.5.1",
     "material-design-lite": "^1.0.6",
     "moment": "^2.10.6",
     "normalize.css": "^3.0.3",
